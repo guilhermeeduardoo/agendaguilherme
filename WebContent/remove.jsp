@@ -18,6 +18,9 @@ br.com.guilherme.agenda.modelo.*"%>
 	Contato c = new Contato();
 	c.setId(id);
 	dao.remove(c); 
+	RequestDispatcher rd = request
+			.getRequestDispatcher("/lista-contatos.jsp");
+	rd.forward(request, response);
 %>
 <p>Removido com Sucesso meu Parcero</p>
 </body>
